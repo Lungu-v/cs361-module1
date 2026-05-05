@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Student Registration</title>
+
+
+        <!--linking to css for better use-->
+        <link rel="stylesheet"
+        href="style.css">
+        </head>
+        <body>
+            <h2>Student Registration Form</h2>
+            <form action="#" method="Post">
+
+                <!--personal details-->
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="fullname">Full Name: </label><br>
+                    <input type="text" id="fulname" name="fullname" required><br><br>
+
+                    <label for="email">Email: </label></br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">phone:</label>
+                    <input type="tel" id="phone" name="phone"><br><br>
+
+                    <label for="dob">Date of Birth: </label><br><br>
+                    <input type="date" id="dob" name="dob"><br><br>
+
+                    <!--Gender-->
+
+                    <label> Gender: </label><br>
+                    <input type="radio"
+                    id="male" name="gender" value="Male">
+                    <label for="male">Male: </label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br>
+
+                    <!--profile photo-->
+                    <label for="photo" Profile Photo:></label><br>
+                    <input type="file" id="photo" name="photo" accept="image*"><br><br>
+
+                </fieldset>
+
+                <!--ACADEMIC AFFAIRLS-->
+                <fieldset>
+                    <legend>Academic Affairls</legend>
+
+                    <!--student ID-->
+                    <label for="student">Student ID:</label><br>
+                    <input type="text" id="studentid" name="studentid" pattern="[A-Z]{2}[0-9]" placeholder="e.g.CS123456" required>
+                    <br><br>
+
+                    <!--program-->
+                    <label for="programme">Program:</label>
+                    <select id="programme" name="programme">
+                        <option value="CS">Computer Science()CS</option>
+                        <option value="IT">Information Technology(IT)</option>
+                        <option value="IS">Information Systems(IS)</option>
+                        </select><br><br>
+
+                        <!--specilisation-->
+                        <label>Specialisatition: </label><br>
+                        <input type="checkbox" id="web" name="spec" value="web" ><label for="web">Web</label>
+
+                        <input type="checkbox" id="security" name="scpec" value="security">
+                        <label for="security">Security</label>
+                        <input type="checkbox" id="ai" name="scpec" value="AI">
+                        <label for="ai">AI</label>
+
+                        <input type="checkbox" id="networks" name="spec" value="Networks" >
+                        <label for="networks">Networks</label>
+                        <br><br>
+
+
+                        <!--textarea-->
+                        <label for="about">Tell us about yourself:</label><br>
+                        <textarea id="about" name="about" rows="4" required></textarea>
+                        <br><br>
+                        </fieldset>
+
+
+                        <!--buttons-->
+                        <fieldset>
+                            <legend>submit</legend>
+                            <input type="submit" value="register">
+                            <input type="reset" value="clear form">
+                            </fieldset>
+                            </form>
+                            </body>
+                            </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
