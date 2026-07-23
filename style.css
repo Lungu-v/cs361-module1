@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #ffffff;
+  color: #1a1a1a;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+header {
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+section {
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f4f4f4;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #e8e8e8;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 4px 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+#course-list li {
+  padding: 4px 0;
+}
+
+#form-message.success {
+  color: green;
+  font-weight: bold;
+}
+
+#form-message.error {
+  color: red;
+  font-weight: bold;
+}
+
+form label {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* Task 03: Dark mode theme */
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+body.dark section {
+  border-bottom-color: #333;
+}
+
+body.dark header {
+  border-bottom-color: #333;
+}
+
+body.dark button {
+  background: #2a2a2a;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+body.dark button:hover {
+  background: #383838;
+}
+
+body.dark input[type="text"] {
+  background: #1e1e1e;
+  color: #f0f0f0;
+  border-color: #444;
+}

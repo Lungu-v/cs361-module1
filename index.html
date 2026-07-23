@@ -1,25 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My first web page</title>
-        <style>
-        body {
-            font-family: Arial, 
-            sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            margin-top: 50px
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        p {
-            color: #34495e
-        }
-    </style>
-    <head>
-        <body>
-        <h1>Hello, CBU!</h1>
-        <P>Welcome to my first website.</p>
-            </body>
-            </html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore CBU Courses</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <!-- Task 01: Grab & Change -->
+    <!-- JS will replace this heading's text and change the paragraph's color on load -->
+    <h1 id="main-heading">Loading...</h1>
+    <p id="sub-text">Checking script status...</p>
+
+    <!-- Task 03: Toggle a Theme -->
+    <button id="theme-toggle">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+
+    <!-- Task 02: Click Counter -->
+    <section id="counter-section">
+      <h2>Leave a like</h2>
+      <button id="like-btn">👍 Like</button>
+      <span id="like-count">0</span>
+    </section>
+
+    <!-- Task 05: Live Search Filter -->
+    <section id="search-section">
+      <h2>Find a Course of your choice</h2>
+      <input type="text" id="search-input" placeholder="Type to filter courses...">
+    </section>
+
+    <!-- Task 04: Build a List from Data -->
+    <section id="list-section">
+      <h2>Courses</h2>
+      <ul id="course-list"></ul>
+      <input type="text" id="new-course-input" placeholder="New course name">
+      <button id="add-course-btn">Add Course</button>
+    </section>
+
+    <!-- Task 06: Validate a Form -->
+    <section id="form-section">
+      <h2>Sign Up to get Course Updates</h2>
+      <form id="signup-form">
+        <label for="name-input">Name</label>
+        <input type="text" id="name-input" placeholder="Your name">
+
+        <label for="email-input">Email</label>
+        <input type="text" id="email-input" placeholder="you@example.com">
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <p id="form-message"></p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
